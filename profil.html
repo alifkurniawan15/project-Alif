@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beranda | Website Prodi</title>
+    <title>profil | Website Prodi</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -22,10 +22,35 @@
         </nav>
         <button id="tombol-tema" type="button">Mode Gelap</button>
     </header>
-    <!-- Konten utama -->
+<!-- Konten Utama Profil -->
     <main>
-        <h2>Beranda</h2>
-        <!-- Isi halaman dikerjakan oleh anggota yang bertugas -->
+        <section class="section-profil">
+            <h2>Profil Program Studi D3 Teknik Informatika</h2>
+            <p class="lead">Program Studi D3 Teknik Informatika Politeknik Negeri Cilacap berfokus menghasilkan tenaga ahli madya yang kompeten di bidang pengembangan perangkat lunak, jaringan komputer, dan sistem informasi.</p>
+            
+            <div class="grid-card">
+                <div class="card">
+                    <h3>Visi</h3>
+                    <p>Menjadi program studi vokasi yang unggul dalam bidang teknologi informasi dan komunikasi di tingkat nasional serta berjiwa wirausaha pada tahun 2030.</p>
+                </div>
+                <div class="card">
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Menyelenggarakan pendidikan vokasi yang berkualitas sesuai kebutuhan industri.</li>
+                        <li>Melaksanakan penelitian terapan di bidang informatika.</li>
+                        <li>Melakukan pengabdian kepada masyarakat berbasis teknologi.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bagian Interaktif Tambahan untuk Profil -->
+            <div class="card" style="margin-top: 24px;">
+                <h3>Informasi Akademik</h3>
+                <p>Klik tombol di bawah ini untuk melihat detail akreditasi dan kepala program studi.</p>
+                <button type="button" id="tombol-info-prodi" class="btn-aksi">Tampilkan Detail Prodi</button>
+                <p id="detail-prodi" class="text-info-hidden"></p>
+            </div>
+        </section>
     </main>
     <!-- Footer -->
     <footer>

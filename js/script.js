@@ -12,4 +12,18 @@ if (tombolTema) {
 }
 // ===== BAGIAN MAHASISWA 2 (Beranda) =====
 // ===== BAGIAN MAHASISWA 3 (Profil dan Kegiatan) =====
+// ===== BAGIAN MAHASISWA 3 (Profil: Interaksi Detail Prodi) =====
+const tombolInfoProdi = document.getElementById("tombol-info-prodi");
+if (tombolInfoProdi) {
+    tombolInfoProdi.addEventListener("click", function () {
+        const detailProdi = document.getElementById("detail-prodi");
+        if (detailProdi.textContent === "") {
+            detailProdi.textContent = "Status Akreditasi: Baik Sekali | Kepala Program Studi: Tim D3 Teknik Informatika";
+            tombolInfoProdi.textContent = "Sembunyikan Detail";
+        } else {
+            detailProdi.textContent = "";
+            tombolInfoProdi.textContent = "Tampilkan Detail Prodi";
+        }
+    });
+}
 // ===== BAGIAN MAHASISWA 4 (Kontak) =====
